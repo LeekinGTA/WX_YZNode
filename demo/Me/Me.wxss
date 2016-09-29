@@ -1,0 +1,15 @@
+.me {
+    display: flex;
+    flex:1;
+    height: 480px;
+    background-color: red;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.yzmobiletalks {
+    width: 150px;
+    height: 150px;
+
+}
