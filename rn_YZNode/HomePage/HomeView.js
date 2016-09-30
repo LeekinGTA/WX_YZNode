@@ -15,6 +15,9 @@ import Cell from './Cell';
 
 import Api from '../Api';
 
+import DetailView from '../Detail/DetailView';
+
+
 class HomeView extends Component {
 
     // 构造
@@ -75,12 +78,41 @@ class HomeView extends Component {
     renderRow(rowData) {
 
         return (
-            <Cell rowDic={rowData} />
+            <Cell
+                rowDic={rowData}
+                selectedCell={(rowData) => this.selectedCell(rowData)}
+            />
         )
     }
+    //点击cell时触发的方法
+    selectedCell(rowData) {
+
+        console.log(rowData.id);
+
+        this.props.navigator.push({
+            title: rowData.title,
+            component: DetailView,
+            passProps: {
+                cellID: rowData.id
+            }
+
+        });
+    }
+
 }
 
 export default HomeView;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
