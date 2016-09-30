@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/YZMobileTalks/YZMobileTalks",
-    "pages/AboutMe/AboutMe"
+    "pages/AboutMe/AboutMe",
+    "pages/DetailPage/Detail"
   ],
   "window": {
     "navigationBarBackgroundColor": "#35495e",

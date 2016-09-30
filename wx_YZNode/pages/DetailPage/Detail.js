@@ -1,23 +1,19 @@
-
 var Api = require('../../API/Api.js');
-
 
 Page({
   data:{
-    // text:"这是一个页面"
-    nodes: []
+    data: {}
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
-    Api.fetchHomePageData()
+    console.log(options);
+    Api.fetchDetailPage(options.id)
       .then(data => {
-        this.setData({nodes: data.data});
+        this.setData({data: data.data});
       })
-    
   },
   onReady:function(){
     // 页面渲染完成
-    
   },
   onShow:function(){
     // 页面显示

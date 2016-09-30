@@ -11,6 +11,7 @@
   background-color: white;
   font-size: 16px;
   flex-direction: column;
+  display: flex;
 }
 
 .scrollView {
@@ -19,8 +20,7 @@
 }
 
 .bottomView {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 .tab {
@@ -35,4 +35,5 @@
 
 .titleText { 
   color: rgb(82, 82, 82);
+  padding: 10px;
 }

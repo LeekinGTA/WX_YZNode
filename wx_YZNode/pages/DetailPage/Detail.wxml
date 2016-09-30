@@ -1,0 +1,3 @@
+<view class="detailView">
+    <text>{{data.content}}</text>
+</view>
